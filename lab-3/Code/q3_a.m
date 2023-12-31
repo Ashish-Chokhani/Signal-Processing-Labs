@@ -1,0 +1,10 @@
+t=0:0.001:1;
+wc=1000;
+wm=100;
+car=cos(wc*t);
+mes=5*sin(wm*t);
+y=car.*mes;
+plot(t,y);
+title('3.3.a');
+xlabel('n');
+ylabel('y[n]');

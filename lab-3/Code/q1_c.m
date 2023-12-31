@@ -1,0 +1,17 @@
+m=matfile("q1.mat");
+s1=m.x;
+N=20;
+l=length(s1);
+t=1:l;
+y=zeros(l);
+y=MAS(s1,N);
+subplot(2,1,1);
+stem(t,s1);
+title('3.1.c');
+xlabel('n');
+ylabel('s1[n]');
+subplot(2,1,2);
+stem(t,y);
+title('3.1.c');
+xlabel('n');
+ylabel('y[n]');

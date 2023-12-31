@@ -1,0 +1,16 @@
+N=5;
+t=1:20;
+x= t>=0;
+l=length(x);
+y=zeros(l);
+y=MAS(x,N);
+subplot(2,1,1);
+stem(t,x);
+title('3.1.b');
+xlabel('n');
+ylabel('u[n]');
+subplot(2,1,2);
+stem(t,y);
+title('3.1.b');
+ylabel('y[n]');
+ylabel('n');
